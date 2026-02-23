@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Greater Boston Area Family Camp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="images/GBA FC logo screenshotted.png" alt="GBA Family Camp"></a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTACT CONTENT -->
+    <section class="section">
+        <h2>Contact Us</h2>
+
+        <div class="contact-info">
+            <h3>Send Us an Email</h3>
+            <p>Click the link below to open your email app and send us a message:</p>
+
+            <a href="mailto:gbafamilycamp@gmail.com" class="email-link">gbafamilycamp@gmail.com</a>
+
+            <p style="color: #636e72; font-size: 0.95rem; margin-top: 1.5rem;">
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Greater Boston Area Family Camp. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>

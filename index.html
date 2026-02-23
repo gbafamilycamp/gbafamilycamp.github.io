@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater Boston Area Family Camp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="images/GBA FC logo screenshotted.png" alt="GBA Family Camp"></a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="images/GBA FC logo screenshotted.png" alt="Greater Boston Area Family Camp" class="hero-logo">
+        </div>
+        <!-- ============================================================
+             PASTORAL SCENE (active) — sheep on rolling green hills
+             To switch back to the forest, comment out this div and
+             uncomment the "FOREST SCENE" div below.
+             ============================================================ -->
+        <div class="hero-scene" aria-hidden="true">
+            <svg viewBox="0 0 1200 220" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+                <!-- Clouds -->
+                <ellipse cx="150" cy="25" rx="55" ry="18" fill="white" opacity="0.4"/>
+                <ellipse cx="110" cy="28" rx="38" ry="14" fill="white" opacity="0.35"/>
+                <ellipse cx="195" cy="30" rx="42" ry="15" fill="white" opacity="0.35"/>
+
+                <ellipse cx="500" cy="15" rx="60" ry="20" fill="white" opacity="0.35"/>
+                <ellipse cx="455" cy="18" rx="40" ry="15" fill="white" opacity="0.3"/>
+                <ellipse cx="550" cy="20" rx="45" ry="16" fill="white" opacity="0.3"/>
+
+                <ellipse cx="850" cy="30" rx="50" ry="17" fill="white" opacity="0.35"/>
+                <ellipse cx="815" cy="33" rx="35" ry="13" fill="white" opacity="0.3"/>
+                <ellipse cx="890" cy="35" rx="40" ry="14" fill="white" opacity="0.3"/>
+
+                <ellipse cx="1100" cy="20" rx="48" ry="16" fill="white" opacity="0.3"/>
+                <ellipse cx="1065" cy="23" rx="33" ry="12" fill="white" opacity="0.25"/>
+                <ellipse cx="1140" cy="25" rx="38" ry="13" fill="white" opacity="0.25"/>
+
+                <!-- Birds (V shapes scattered across the sky) -->
+                <path d="M300,30 Q305,24 310,30 Q315,24 320,30" fill="none" stroke="#2D3436" stroke-width="1.8" opacity="0.4"/>
+                <path d="M340,20 Q344,15 348,20 Q352,15 356,20" fill="none" stroke="#2D3436" stroke-width="1.5" opacity="0.35"/>
+                <path d="M700,25 Q704,19 708,25 Q712,19 716,25" fill="none" stroke="#2D3436" stroke-width="1.6" opacity="0.38"/>
+                <path d="M730,40 Q733,35 736,40 Q739,35 742,40" fill="none" stroke="#2D3436" stroke-width="1.3" opacity="0.3"/>
+                <path d="M950,18 Q954,12 958,18 Q962,12 966,18" fill="none" stroke="#2D3436" stroke-width="1.5" opacity="0.35"/>
+                <path d="M180,45 Q183,40 186,45 Q189,40 192,45" fill="none" stroke="#2D3436" stroke-width="1.3" opacity="0.3"/>
+
+                <!-- Rolling hills — back (distant, lighter) -->
+                <path d="M0,130 Q150,85 300,120 Q450,90 600,115 Q750,80 900,110 Q1050,88 1200,105 L1200,220 L0,220 Z" fill="#7CB342" opacity="0.4"/>
+
+                <!-- Rolling hills — middle -->
+                <path d="M0,155 Q120,115 280,142 Q420,108 560,138 Q720,105 880,132 Q1020,112 1200,128 L1200,220 L0,220 Z" fill="#558B2F" opacity="0.5"/>
+
+                <!-- Rolling hills — front (closest, darkest) -->
+                <path d="M0,172 Q200,145 400,162 Q600,140 800,158 Q1000,142 1200,155 L1200,220 L0,220 Z" fill="#33691E" opacity="0.5"/>
+
+                <!-- ======== SHEPHERD ======== -->
+                <g opacity="0.7" transform="translate(900, 118)">
+                    <!-- Staff / shepherd's crook -->
+                    <line x1="15" y1="-30" x2="15" y2="38" stroke="#8B4513" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M15,-30 Q15,-38 8,-38 Q2,-38 2,-33" fill="none" stroke="#8B4513" stroke-width="2.5" stroke-linecap="round"/>
+                    <!-- Head -->
+                    <circle cx="0" cy="-18" r="7" fill="#FDBCB4"/>
+                    <!-- Headcloth -->
+                    <path d="M-7,-20 Q0,-28 7,-20 L8,-12 Q0,-10 -8,-12 Z" fill="#D4A76A" opacity="0.85"/>
+                    <!-- Body / robe -->
+                    <path d="M-8,-11 L-13,32 L13,32 L8,-11 Z" fill="#8B6C42"/>
+                    <!-- Belt / sash -->
+                    <line x1="-10" y1="6" x2="10" y2="6" stroke="#654321" stroke-width="2.5" stroke-linecap="round"/>
+                    <!-- Arms -->
+                    <line x1="-8" y1="-4" x2="-15" y2="10" stroke="#FDBCB4" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="8" y1="-4" x2="15" y2="8" stroke="#FDBCB4" stroke-width="3" stroke-linecap="round"/>
+                    <!-- Hand holding staff -->
+                    <circle cx="15" cy="8" r="2.5" fill="#FDBCB4"/>
+                    <!-- Feet -->
+                    <ellipse cx="-5" cy="34" rx="5" ry="2.5" fill="#6D4C2E"/>
+                    <ellipse cx="5" cy="34" rx="5" ry="2.5" fill="#6D4C2E"/>
+                </g>
+
+                <!-- ======== FLOCK (clustered near shepherd, x~770-1060) ======== -->
+
+                <!-- Back row — small distant sheep on middle hill, packed tight -->
+                <g opacity="0.5" transform="translate(785, 128)">
+                    <circle cx="-4" cy="0" r="7" fill="white"/>
+                    <circle cx="4" cy="0" r="7" fill="white"/>
+                    <circle cx="0" cy="-3" r="7" fill="white"/>
+                    <ellipse cx="9" cy="-2" rx="4" ry="3.5" fill="#444"/>
+                    <circle cx="10" cy="-3" r="1" fill="white"/>
+                    <line x1="-3" y1="7" x2="-3" y2="12" stroke="#444" stroke-width="1.5"/>
+                    <line x1="4" y1="7" x2="4" y2="12" stroke="#444" stroke-width="1.5"/>
+                </g>
+                <g opacity="0.5" transform="translate(808, 125)">
+                    <circle cx="-4" cy="0" r="7" fill="white"/>
+                    <circle cx="4" cy="0" r="7" fill="white"/>
+                    <circle cx="0" cy="-3" r="7" fill="white"/>
+                    <ellipse cx="-9" cy="-2" rx="4" ry="3.5" fill="#444"/>
+                    <circle cx="-10" cy="-3" r="1" fill="white"/>
+                    <line x1="-3" y1="7" x2="-3" y2="12" stroke="#444" stroke-width="1.5"/>
+                    <line x1="4" y1="7" x2="4" y2="12" stroke="#444" stroke-width="1.5"/>
+                </g>
+                <g opacity="0.5" transform="translate(832, 122)">
+                    <circle cx="-4" cy="0" r="7" fill="white"/>
+                    <circle cx="4" cy="0" r="7" fill="white"/>
+                    <circle cx="0" cy="-3" r="7" fill="white"/>
+                    <ellipse cx="9" cy="-2" rx="4" ry="3.5" fill="#444"/>
+                    <circle cx="10" cy="-3" r="1" fill="white"/>
+                    <line x1="-3" y1="7" x2="-3" y2="12" stroke="#444" stroke-width="1.5"/>
+                    <line x1="4" y1="7" x2="4" y2="12" stroke="#444" stroke-width="1.5"/>
+                </g>
+                <g opacity="0.5" transform="translate(855, 119)">
+                    <circle cx="-4" cy="0" r="7" fill="white"/>
+                    <circle cx="4" cy="0" r="7" fill="white"/>
+                    <circle cx="0" cy="-3" r="7" fill="white"/>
+                    <ellipse cx="-9" cy="-2" rx="4" ry="3.5" fill="#444"/>
+                    <circle cx="-10" cy="-3" r="1" fill="white"/>
+                    <line x1="-3" y1="7" x2="-3" y2="12" stroke="#444" stroke-width="1.5"/>
+                    <line x1="4" y1="7" x2="4" y2="12" stroke="#444" stroke-width="1.5"/>
+                </g>
+                <g opacity="0.5" transform="translate(950, 112)">
+                    <circle cx="-4" cy="0" r="7" fill="white"/>
+                    <circle cx="4" cy="0" r="7" fill="white"/>
+                    <circle cx="0" cy="-3" r="7" fill="white"/>
+                    <ellipse cx="9" cy="-2" rx="4" ry="3.5" fill="#444"/>
+                    <circle cx="10" cy="-3" r="1" fill="white"/>
+                    <line x1="-3" y1="7" x2="-3" y2="12" stroke="#444" stroke-width="1.5"/>
+                    <line x1="4" y1="7" x2="4" y2="12" stroke="#444" stroke-width="1.5"/>
+                </g>
+                <g opacity="0.5" transform="translate(973, 109)">
+                    <circle cx="-4" cy="0" r="7" fill="white"/>
+                    <circle cx="4" cy="0" r="7" fill="white"/>
+                    <circle cx="0" cy="-3" r="7" fill="white"/>
+                    <ellipse cx="-9" cy="-2" rx="4" ry="3.5" fill="#444"/>
+                    <circle cx="-10" cy="-3" r="1" fill="white"/>
+                    <line x1="-3" y1="7" x2="-3" y2="12" stroke="#444" stroke-width="1.5"/>
+                    <line x1="4" y1="7" x2="4" y2="12" stroke="#444" stroke-width="1.5"/>
+                </g>
+                <g opacity="0.5" transform="translate(998, 106)">
+                    <circle cx="-4" cy="0" r="7" fill="white"/>
+                    <circle cx="4" cy="0" r="7" fill="white"/>
+                    <circle cx="0" cy="-3" r="7" fill="white"/>
+                    <ellipse cx="9" cy="-2" rx="4" ry="3.5" fill="#444"/>
+                    <circle cx="10" cy="-3" r="1" fill="white"/>
+                    <line x1="-3" y1="7" x2="-3" y2="12" stroke="#444" stroke-width="1.5"/>
+                    <line x1="4" y1="7" x2="4" y2="12" stroke="#444" stroke-width="1.5"/>
+                </g>
+                <g opacity="0.5" transform="translate(1025, 110)">
+                    <circle cx="-4" cy="0" r="7" fill="white"/>
+                    <circle cx="4" cy="0" r="7" fill="white"/>
+                    <circle cx="0" cy="-3" r="7" fill="white"/>
+                    <ellipse cx="-9" cy="-2" rx="4" ry="3.5" fill="#444"/>
+                    <circle cx="-10" cy="-3" r="1" fill="white"/>
+                    <line x1="-3" y1="7" x2="-3" y2="12" stroke="#444" stroke-width="1.5"/>
+                    <line x1="4" y1="7" x2="4" y2="12" stroke="#444" stroke-width="1.5"/>
+                </g>
+
+                <!-- Front row — larger sheep on front hill, packed tight with slight overlap -->
+                <g opacity="0.7" transform="translate(770, 148)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="-12" cy="2" rx="5" ry="4" fill="#444"/>
+                    <circle cx="-13" cy="1" r="1.3" fill="white"/>
+                    <ellipse cx="-15" cy="-1" rx="3" ry="1.5" fill="#555" transform="rotate(-15,-15,-1)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+                <g opacity="0.7" transform="translate(795, 145)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="12" cy="-2" rx="5" ry="4.5" fill="#444"/>
+                    <circle cx="13" cy="-3" r="1.3" fill="white"/>
+                    <ellipse cx="15" cy="-6" rx="3" ry="1.5" fill="#555" transform="rotate(15,15,-6)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+                <g opacity="0.7" transform="translate(822, 143)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="-12" cy="-2" rx="5" ry="4.5" fill="#444"/>
+                    <circle cx="-13" cy="-3" r="1.3" fill="white"/>
+                    <ellipse cx="-15" cy="-6" rx="3" ry="1.5" fill="#555" transform="rotate(-15,-15,-6)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+                <g opacity="0.7" transform="translate(848, 141)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="12" cy="-2" rx="5" ry="4.5" fill="#444"/>
+                    <circle cx="13" cy="-3" r="1.3" fill="white"/>
+                    <ellipse cx="15" cy="-6" rx="3" ry="1.5" fill="#555" transform="rotate(15,15,-6)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+                <g opacity="0.7" transform="translate(872, 140)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="-12" cy="-2" rx="5" ry="4.5" fill="#444"/>
+                    <circle cx="-13" cy="-3" r="1.3" fill="white"/>
+                    <ellipse cx="-15" cy="-6" rx="3" ry="1.5" fill="#555" transform="rotate(-15,-15,-6)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+                <!-- Lamb near the shepherd -->
+                <g opacity="0.65" transform="translate(932, 148)">
+                    <circle cx="-3" cy="0" r="5" fill="white"/>
+                    <circle cx="3" cy="0" r="5" fill="white"/>
+                    <circle cx="0" cy="-2" r="5" fill="white"/>
+                    <ellipse cx="-7" cy="-1" rx="3" ry="2.5" fill="#444"/>
+                    <circle cx="-7.5" cy="-2" r="0.8" fill="white"/>
+                    <line x1="-2" y1="5" x2="-2" y2="9" stroke="#444" stroke-width="1.2"/>
+                    <line x1="3" y1="5" x2="3" y2="9" stroke="#444" stroke-width="1.2"/>
+                </g>
+                <g opacity="0.7" transform="translate(950, 148)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="12" cy="-2" rx="5" ry="4.5" fill="#444"/>
+                    <circle cx="13" cy="-3" r="1.3" fill="white"/>
+                    <ellipse cx="15" cy="-6" rx="3" ry="1.5" fill="#555" transform="rotate(15,15,-6)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+                <g opacity="0.7" transform="translate(977, 150)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="-12" cy="-2" rx="5" ry="4.5" fill="#444"/>
+                    <circle cx="-13" cy="-3" r="1.3" fill="white"/>
+                    <ellipse cx="-15" cy="-6" rx="3" ry="1.5" fill="#555" transform="rotate(-15,-15,-6)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+                <g opacity="0.7" transform="translate(1002, 152)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="12" cy="-2" rx="5" ry="4.5" fill="#444"/>
+                    <circle cx="13" cy="-3" r="1.3" fill="white"/>
+                    <ellipse cx="15" cy="-6" rx="3" ry="1.5" fill="#555" transform="rotate(15,15,-6)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+                <g opacity="0.7" transform="translate(1028, 154)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="-12" cy="-2" rx="5" ry="4.5" fill="#444"/>
+                    <circle cx="-13" cy="-3" r="1.3" fill="white"/>
+                    <ellipse cx="-15" cy="-6" rx="3" ry="1.5" fill="#555" transform="rotate(-15,-15,-6)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+                <g opacity="0.7" transform="translate(1055, 156)">
+                    <circle cx="-5" cy="0" r="9" fill="white"/>
+                    <circle cx="5" cy="0" r="9" fill="white"/>
+                    <circle cx="0" cy="-4" r="9" fill="white"/>
+                    <circle cx="0" cy="3" r="8" fill="white"/>
+                    <ellipse cx="12" cy="-2" rx="5" ry="4.5" fill="#444"/>
+                    <circle cx="13" cy="-3" r="1.3" fill="white"/>
+                    <ellipse cx="15" cy="-6" rx="3" ry="1.5" fill="#555" transform="rotate(15,15,-6)"/>
+                    <line x1="-4" y1="9" x2="-4" y2="17" stroke="#444" stroke-width="2"/>
+                    <line x1="5" y1="9" x2="5" y2="17" stroke="#444" stroke-width="2"/>
+                </g>
+            </svg>
+        </div>
+
+        <!-- ============================================================
+             FOREST SCENE (inactive) — original evergreen trees
+             To switch back: uncomment this div and comment out the
+             "PASTORAL SCENE" div above.
+             ============================================================
+        <div class="hero-scene" aria-hidden="true">
+            <svg viewBox="0 0 1200 220" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="180" cy="28" rx="50" ry="16" fill="white" opacity="0.35"/>
+                <ellipse cx="145" cy="30" rx="35" ry="14" fill="white" opacity="0.3"/>
+                <ellipse cx="220" cy="32" rx="40" ry="13" fill="white" opacity="0.3"/>
+                <ellipse cx="750" cy="18" rx="55" ry="17" fill="white" opacity="0.3"/>
+                <ellipse cx="710" cy="20" rx="38" ry="13" fill="white" opacity="0.25"/>
+                <ellipse cx="795" cy="22" rx="42" ry="14" fill="white" opacity="0.25"/>
+                <ellipse cx="1050" cy="38" rx="45" ry="14" fill="white" opacity="0.3"/>
+                <ellipse cx="1020" cy="40" rx="32" ry="12" fill="white" opacity="0.25"/>
+                <ellipse cx="1085" cy="42" rx="36" ry="12" fill="white" opacity="0.25"/>
+                <path d="M420,22 Q425,16 430,22 Q435,16 440,22" fill="none" stroke="#2D3436" stroke-width="1.8" opacity="0.4"/>
+                <path d="M460,32 Q464,27 468,32 Q472,27 476,32" fill="none" stroke="#2D3436" stroke-width="1.5" opacity="0.35"/>
+                <polygon points="70,40 55,70 85,70" fill="#2E7D32" opacity="0.5"/>
+                <polygon points="70,55 48,90 92,90" fill="#338633" opacity="0.5"/>
+                <polygon points="70,75 40,115 100,115" fill="#3E9E3E" opacity="0.5"/>
+                <rect x="65" y="115" width="10" height="12" fill="#5D4037" opacity="0.5"/>
+                <polygon points="220,35 205,65 235,65" fill="#338633" opacity="0.5"/>
+                <polygon points="220,50 198,85 242,85" fill="#2E7D32" opacity="0.5"/>
+                <polygon points="220,70 190,110 250,110" fill="#3E9E3E" opacity="0.5"/>
+                <rect x="215" y="110" width="10" height="12" fill="#5D4037" opacity="0.5"/>
+                <polygon points="370,42 355,72 385,72" fill="#2E7D32" opacity="0.5"/>
+                <polygon points="370,57 348,92 392,92" fill="#338633" opacity="0.5"/>
+                <polygon points="370,77 340,117 400,117" fill="#3E9E3E" opacity="0.5"/>
+                <rect x="365" y="117" width="10" height="12" fill="#5D4037" opacity="0.5"/>
+                <polygon points="520,30 505,60 535,60" fill="#338633" opacity="0.5"/>
+                <polygon points="520,45 498,80 542,80" fill="#2E7D32" opacity="0.5"/>
+                <polygon points="520,65 490,105 550,105" fill="#3E9E3E" opacity="0.5"/>
+                <rect x="515" y="105" width="10" height="12" fill="#5D4037" opacity="0.5"/>
+                <polygon points="670,38 655,68 685,68" fill="#2E7D32" opacity="0.5"/>
+                <polygon points="670,53 648,88 692,88" fill="#338633" opacity="0.5"/>
+                <polygon points="670,73 640,113 700,113" fill="#3E9E3E" opacity="0.5"/>
+                <rect x="665" y="113" width="10" height="12" fill="#5D4037" opacity="0.5"/>
+                <polygon points="820,33 805,63 835,63" fill="#338633" opacity="0.5"/>
+                <polygon points="820,48 798,83 842,83" fill="#2E7D32" opacity="0.5"/>
+                <polygon points="820,68 790,108 850,108" fill="#3E9E3E" opacity="0.5"/>
+                <rect x="815" y="108" width="10" height="12" fill="#5D4037" opacity="0.5"/>
+                <polygon points="970,40 955,70 985,70" fill="#2E7D32" opacity="0.5"/>
+                <polygon points="970,55 948,90 992,90" fill="#338633" opacity="0.5"/>
+                <polygon points="970,75 940,115 1000,115" fill="#3E9E3E" opacity="0.5"/>
+                <rect x="965" y="115" width="10" height="12" fill="#5D4037" opacity="0.5"/>
+                <polygon points="1120,36 1105,66 1135,66" fill="#338633" opacity="0.5"/>
+                <polygon points="1120,51 1098,86 1142,86" fill="#2E7D32" opacity="0.5"/>
+                <polygon points="1120,71 1090,111 1150,111" fill="#3E9E3E" opacity="0.5"/>
+                <rect x="1115" y="111" width="10" height="12" fill="#5D4037" opacity="0.5"/>
+                <polygon points="30,70 10,108 50,108" fill="#1B5E20" opacity="0.7"/>
+                <polygon points="30,88 2,135 58,135" fill="#236B23" opacity="0.7"/>
+                <polygon points="30,115 -8,170 68,170" fill="#2E7D32" opacity="0.7"/>
+                <rect x="23" y="170" width="14" height="18" fill="#4E342E" opacity="0.7"/>
+                <polygon points="150,60 130,98 170,98" fill="#236B23" opacity="0.7"/>
+                <polygon points="150,78 122,125 178,125" fill="#1B5E20" opacity="0.7"/>
+                <polygon points="150,105 112,160 188,160" fill="#2E7D32" opacity="0.7"/>
+                <rect x="143" y="160" width="14" height="18" fill="#4E342E" opacity="0.7"/>
+                <polygon points="290,65 270,103 310,103" fill="#1B5E20" opacity="0.7"/>
+                <polygon points="290,83 262,130 318,130" fill="#236B23" opacity="0.7"/>
+                <polygon points="290,110 252,165 328,165" fill="#2E7D32" opacity="0.7"/>
+                <rect x="283" y="165" width="14" height="18" fill="#4E342E" opacity="0.7"/>
+                <polygon points="440,55 420,93 460,93" fill="#236B23" opacity="0.7"/>
+                <polygon points="440,73 412,120 468,120" fill="#1B5E20" opacity="0.7"/>
+                <polygon points="440,100 402,155 478,155" fill="#2E7D32" opacity="0.7"/>
+                <rect x="433" y="155" width="14" height="18" fill="#4E342E" opacity="0.7"/>
+                <polygon points="590,62 570,100 610,100" fill="#1B5E20" opacity="0.7"/>
+                <polygon points="590,80 562,127 618,127" fill="#236B23" opacity="0.7"/>
+                <polygon points="590,107 552,162 628,162" fill="#2E7D32" opacity="0.7"/>
+                <rect x="583" y="162" width="14" height="18" fill="#4E342E" opacity="0.7"/>
+                <polygon points="740,58 720,96 760,96" fill="#236B23" opacity="0.7"/>
+                <polygon points="740,76 712,123 768,123" fill="#1B5E20" opacity="0.7"/>
+                <polygon points="740,103 702,158 778,158" fill="#2E7D32" opacity="0.7"/>
+                <rect x="733" y="158" width="14" height="18" fill="#4E342E" opacity="0.7"/>
+                <polygon points="890,63 870,101 910,101" fill="#1B5E20" opacity="0.7"/>
+                <polygon points="890,81 862,128 918,128" fill="#236B23" opacity="0.7"/>
+                <polygon points="890,108 852,163 928,163" fill="#2E7D32" opacity="0.7"/>
+                <rect x="883" y="163" width="14" height="18" fill="#4E342E" opacity="0.7"/>
+                <polygon points="1040,56 1020,94 1060,94" fill="#236B23" opacity="0.7"/>
+                <polygon points="1040,74 1012,121 1068,121" fill="#1B5E20" opacity="0.7"/>
+                <polygon points="1040,101 1002,156 1078,156" fill="#2E7D32" opacity="0.7"/>
+                <rect x="1033" y="156" width="14" height="18" fill="#4E342E" opacity="0.7"/>
+                <polygon points="1170,66 1150,104 1190,104" fill="#1B5E20" opacity="0.7"/>
+                <polygon points="1170,84 1142,131 1198,131" fill="#236B23" opacity="0.7"/>
+                <polygon points="1170,111 1132,166 1208,166" fill="#2E7D32" opacity="0.7"/>
+                <rect x="1163" y="166" width="14" height="18" fill="#4E342E" opacity="0.7"/>
+                <rect x="0" y="165" width="1200" height="55" fill="#2E7D32" opacity="0.4"/>
+            </svg>
+        </div>
+        -->
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="section">
+        <div class="highlights">
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <h3>Biblical Character</h3>
+                <p>Impart to our children the preciousness of humanity and character using Biblical patterns.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">👨‍👩‍👧‍👦</div>
+                <h3>Family Connection</h3>
+                <p>Create an environment where families can connect in the context of the Bible.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">❤️</div>
+                <h3>Mutual Encouragement</h3>
+                <p>Facilitate opportunities for mutual encouragement and shepherding in an atmosphere of love.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHOTO -->
+    <section class="section" style="text-align: center;">
+        <img src="images/SFC_3_outside.jpg" alt="Families playing together outdoors at camp" class="page-photo scroll-reveal">
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="section" style="text-align: center;">
+        <p>"...turn the heart of the fathers to the children and the heart of the children to their fathers."<br><em>Malachi 4:6</em></p>
+        <a href="about.html" class="btn btn-primary" style="margin-top: 1rem;">About Family Camp</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Greater Boston Area Family Camp. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+
+        // Scroll reveal: fade in elements as they enter the viewport
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.scroll-reveal').forEach(function (el) {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>

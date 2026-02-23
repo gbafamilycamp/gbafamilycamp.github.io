@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Greater Boston Area Family Camp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="images/GBA FC logo screenshotted.png" alt="GBA Family Camp"></a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ABOUT CONTENT -->
+    <section class="section">
+        <h2>About Family Camp</h2>
+
+        <p>Family Camp is a wonderful gathering of the family of God, with a particular focus on young children through elementary school age. While the children are infused with the preciousness of the Bible, proper human character, and the family of God, the parents are encouraged through mutual fellowship with one another.</p>
+
+        <img src="images/SFC_1_banner.jpg" alt="Kids holding a hand-painted banner at camp" class="page-photo scroll-reveal">
+
+        <h3>What to Expect</h3>
+        <p>Family Camp is filled with joyful singing, engaging story time, hands-on crafts, fun activities, snack time, and more! There is also a toddlers play area as well as a nursing mother's room.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Greater Boston Area Family Camp. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.scroll-reveal').forEach(function (el) {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
