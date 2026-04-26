@@ -267,6 +267,43 @@ header {
     transform: translateY(0);
 }
 
+/* ===== EXPECT GRID (About Page) ===== */
+.expect-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.expect-item {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0;
+}
+
+.expect-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.expect-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.expect-item figcaption {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    text-align: center;
+    padding: 0.9rem 0.8rem;
+    font-size: 1.15rem;
+}
+
 /* ===== HIGHLIGHT CARDS (Home Page) ===== */
 .highlights {
     display: grid;
