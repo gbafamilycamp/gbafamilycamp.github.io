@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - Greater Boston Area Family Camp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="images/GBA FC logo screenshotted.png" alt="GBA Family Camp"></a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html" class="active">Schedule</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SCHEDULE CONTENT -->
+    <section class="section">
+        <h2>Schedule</h2>
+
+        <div class="schedule-list">
+            <div class="schedule-day">
+                <div class="schedule-day-header">
+                    <h3>Thursday, June 11, 2026</h3>
+                    <p class="schedule-date">5:30 PM &ndash; 8:00 PM</p>
+                </div>
+                <div class="schedule-slots">
+                    <div class="schedule-time">5:15 PM</div>
+                    <div class="schedule-activity">Arrival</div>
+
+                    <div class="schedule-time">5:30 PM</div>
+                    <div class="schedule-activity">Eat Together<sup>*</sup></div>
+
+                    <div class="schedule-time">6:15 PM</div>
+                    <div class="schedule-activity">Singing</div>
+
+                    <div class="schedule-time">6:50 PM</div>
+                    <div class="schedule-activity">Story</div>
+
+                    <div class="schedule-time">7:20 PM</div>
+                    <div class="schedule-activity">Activities</div>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <div class="schedule-day-header">
+                    <h3>Friday, June 12, 2026</h3>
+                    <p class="schedule-date">5:30 PM &ndash; 8:00 PM</p>
+                </div>
+                <div class="schedule-slots">
+                    <div class="schedule-time">5:15 PM</div>
+                    <div class="schedule-activity">Arrival</div>
+
+                    <div class="schedule-time">5:30 PM</div>
+                    <div class="schedule-activity">Eat Together<sup>*</sup></div>
+
+                    <div class="schedule-time">6:15 PM</div>
+                    <div class="schedule-activity">Singing</div>
+
+                    <div class="schedule-time">6:30 PM</div>
+                    <div class="schedule-activity">Story</div>
+
+                    <div class="schedule-concurrent">
+                        <div class="schedule-concurrent-label">6:45 PM &ndash; 7:15 PM &middot; Concurrent with Story</div>
+                        <div class="schedule-concurrent-detail">Fellowship with Parents</div>
+                    </div>
+
+                    <div class="schedule-time">7:20 PM</div>
+                    <div class="schedule-activity">Craft</div>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <div class="schedule-day-header">
+                    <h3>Saturday, June 13, 2026</h3>
+                    <p class="schedule-date">9:30 AM &ndash; 12:30 PM</p>
+                </div>
+                <div class="schedule-slots">
+                    <div class="schedule-time">9:15 AM</div>
+                    <div class="schedule-activity">Arrival</div>
+
+                    <div class="schedule-time">9:30 AM</div>
+                    <div class="schedule-activity">Snack Together</div>
+
+                    <div class="schedule-time">10:00 AM</div>
+                    <div class="schedule-activity">Singing</div>
+
+                    <div class="schedule-time">10:35 AM</div>
+                    <div class="schedule-activity">Story</div>
+
+                    <div class="schedule-time">11:00 AM</div>
+                    <div class="schedule-activity">Activities</div>
+
+                    <div class="schedule-time">12:00 PM</div>
+                    <div class="schedule-activity">BBQ Lunch<sup>**</sup></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="schedule-notes">
+            <p><sup>*</sup> Eating dinner together is encouraged. You may bring your own food or pre-order dinner boxes on the registration form.</p>
+            <p><sup>**</sup> The main protein will be provided. A sign-up sheet to bring supplemental items will be sent out.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Greater Boston Area Family Camp. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.scroll-reveal').forEach(function (el) {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>

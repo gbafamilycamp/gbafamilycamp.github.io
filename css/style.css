@@ -436,6 +436,110 @@ header {
     color: var(--color-secondary);
 }
 
+/* ===== SCHEDULE PAGE ===== */
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.schedule-day {
+    background-color: var(--color-white);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.schedule-day-header {
+    border-bottom: 2px solid rgba(74, 155, 74, 0.15);
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.schedule-day-header h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin: 0 0 0.25rem;
+}
+
+.schedule-day-header .schedule-date {
+    color: #636e72;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.schedule-slots {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    row-gap: 0.75rem;
+    column-gap: 1.25rem;
+    align-items: baseline;
+}
+
+.schedule-time {
+    font-family: var(--font-heading);
+    color: var(--color-secondary);
+    font-size: 1.05rem;
+    white-space: nowrap;
+}
+
+.schedule-activity {
+    font-size: 1.05rem;
+    color: var(--color-text);
+}
+
+.schedule-concurrent {
+    grid-column: 1 / -1;
+    background-color: rgba(107, 185, 232, 0.1);
+    border-left: 4px solid var(--color-secondary);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+}
+
+.schedule-concurrent-label {
+    font-family: var(--font-heading);
+    color: var(--color-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+}
+
+.schedule-concurrent-detail {
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.schedule-notes {
+    margin-top: 2rem;
+    padding: 1.25rem 1.5rem;
+    background-color: rgba(74, 155, 74, 0.06);
+    border-radius: 12px;
+    font-size: 0.98rem;
+    color: #636e72;
+}
+
+.schedule-notes p {
+    margin: 0;
+}
+
+.schedule-notes p + p {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .schedule-slots {
+        grid-template-columns: 90px 1fr;
+        column-gap: 0.9rem;
+    }
+
+    .schedule-day {
+        padding: 1.5rem;
+    }
+}
+
 /* ===== FAQ DROPDOWNS ===== */
 .faq-list {
     margin-top: 2rem;
