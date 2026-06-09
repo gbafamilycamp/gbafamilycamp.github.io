@@ -482,7 +482,45 @@ header {
     color: var(--color-primary);
 }
 
+.announcement-registered {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.announcement-registered-title {
+    color: var(--color-white);
+    font-size: 2.2rem;
+}
+
+.announcement-registered-text {
+    font-size: 1.15rem;
+    margin: 1rem auto 1.5rem;
+    max-width: 560px;
+}
+
+.announcement-registered .btn-primary {
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+}
+
+.announcement-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.announcement-link:hover {
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
 @media (max-width: 600px) {
+    .announcement-registered-title {
+        font-size: 1.7rem;
+    }
+
     .announcement {
         padding: 2.25rem 1.25rem;
     }
@@ -598,6 +636,64 @@ header {
     .schedule-day {
         padding: 1.5rem;
     }
+}
+
+/* ===== STORY LEVEL KEY ===== */
+.story-level-key {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    max-width: 800px;
+    margin: 1.25rem auto 1rem;
+}
+
+.story-level-item {
+    border-radius: 10px;
+    padding: 0.9rem 0.75rem;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.story-level-name {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
+}
+
+.story-level-age {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+    .story-level-key {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .story-level-key {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== VIDEO EMBED ===== */
+.video-embed {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 1.5rem auto 0;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 /* ===== FAQ DROPDOWNS ===== */
